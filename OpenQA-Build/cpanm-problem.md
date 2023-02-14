@@ -43,4 +43,4 @@ cpanm --version
 
 如下图所示，若正常返回 capanm 版本，则说明安装成功。
 
-![cpanm缺失解决-1](./img/cpanm缺失解决-1.png)
+![cpanm-problem-1](./img/cpanm-problem-1.png)
