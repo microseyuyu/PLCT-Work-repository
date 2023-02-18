@@ -2,7 +2,7 @@
 
 ## 日志
 
-[log]()
+[log](https://github.com/microseyuyu/PLCT-Work-repository/blob/main/nodejs/make_test)
 
 ## 结果
 
