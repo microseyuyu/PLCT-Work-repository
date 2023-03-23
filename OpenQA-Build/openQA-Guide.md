@@ -18,8 +18,7 @@ cd /usr/share/openqa/script
 ./openqa-bootstrap
 ```
 
-该脚本会默认下载 openSUSE 的 needles，此处我们不需要，Ctrl-C 终止脚本后
-修改 `fetchneedles` 脚本如下以下载 openEuler 已有的 needles。
+该脚本会默认下载 openSUSE 的 needles，此处我们不需要，Ctrl-C 终止脚本`openqa-bootstrap`后修改 `fetchneedles` 脚本如下以下载 openEuler 已有的 needles。（`openqa-bootstrap`和`fetchneedles`均在同一个文件夹）
 
 ```
 : "${dist_name:=${dist:-"openEuler"}}" # the display name, for the help message
@@ -36,7 +35,7 @@ cd /usr/share/openqa/script
 : "${needles_branch:="master"}"
 ```
 
-再次运行 `openqa-bootstrap` 脚本。
+修改完成后，再次运行 `openqa-bootstrap` 脚本。
 
 ### 下载 openEuler RISC-V 测试
 
