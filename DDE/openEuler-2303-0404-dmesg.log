@@ -1,0 +1,323 @@
+[    0.000000] Linux version 6.1.19-1.oe2303.riscv64 (abuild@oerv-obs-worker-02) (gcc_old (GCC) 10.3.1, GNU ld (GNU Binutils) 2.37) #1 SMP Mon Apr  3 18:31:52 UTC 2023
+[    0.000000] random: crng init done
+[    0.000000] OF: fdt: Ignoring memory range 0x80000000 - 0x80200000
+[    0.000000] Machine model: riscv-virtio,qemu
+[    0.000000] Memory limited to 4096MB
+[    0.000000] earlycon: ns16550a0 at MMIO 0x0000000010000000 (options '')
+[    0.000000] printk: bootconsole [ns16550a0] enabled
+[    0.000000] efi: UEFI not found.
+[    0.000000] Zone ranges:
+[    0.000000]   DMA32    [mem 0x0000000080200000-0x00000000ffffffff]
+[    0.000000]   Normal   empty
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000080200000-0x00000000ffffffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000080200000-0x00000000ffffffff]
+[    0.000000] SBI specification v1.0 detected
+[    0.000000] SBI implementation ID=0x1 Version=0x10002
+[    0.000000] SBI TIME extension detected
+[    0.000000] SBI IPI extension detected
+[    0.000000] SBI RFENCE extension detected
+[    0.000000] SBI SRST extension detected
+[    0.000000] SBI HSM extension detected
+[    0.000000] riscv: base ISA extensions acdfhim
+[    0.000000] riscv: ELF capabilities acdfim
+[    0.000000] percpu: Embedded 27 pages/cpu s71544 r8192 d30856 u110592
+[    0.000000] pcpu-alloc: s71544 r8192 d30856 u110592 alloc=27*4096
+[    0.000000] pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 515592
+[    0.000000] Kernel command line: root=/dev/vda2 rw console=ttyS0 systemd.default_timeout_start_sec=600 selinux=0 highres=off mem=4096M earlycon
+[    0.000000] Unknown kernel command line parameters "selinux=0", will be passed to user space.
+[    0.000000] Dentry cache hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+[    0.000000] mem auto-init: stack:off, heap alloc:off, heap free:off
+[    0.000000] Virtual kernel memory layout:
+[    0.000000]       fixmap : 0xff1bfffffee00000 - 0xff1bffffff000000   (2048 kB)
+[    0.000000]       pci io : 0xff1bffffff000000 - 0xff1c000000000000   (  16 MB)
+[    0.000000]      vmemmap : 0xff1c000000000000 - 0xff20000000000000   (1024 TB)
+[    0.000000]      vmalloc : 0xff20000000000000 - 0xff60000000000000   (16384 TB)
+[    0.000000]      modules : 0xffffffff0165a000 - 0xffffffff80000000   (2025 MB)
+[    0.000000]       lowmem : 0xff60000000000000 - 0xff6000007fe00000   (2046 MB)
+[    0.000000]       kernel : 0xffffffff80000000 - 0xffffffffffffffff   (2047 MB)
+[    0.000000] Memory: 2034184K/2095104K available (8786K kernel code, 5805K rwdata, 4096K rodata, 2249K init, 493K bss, 60920K reserved, 0K cma-reserved)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+[    0.000000] trace event string verifier disabled
+[    0.000000] rcu: Hierarchical RCU implementation.
+[    0.000000] rcu: 	RCU restricting CPUs from NR_CPUS=64 to nr_cpu_ids=4.
+[    0.000000] rcu: 	RCU debug extended QS entry/exit.
+[    0.000000] 	Tracing variant of Tasks RCU enabled.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+[    0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=4
+[    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+[    0.000000] riscv-intc: 64 local interrupts mapped
+[    0.000000] plic: plic@c000000: mapped 96 interrupts with 4 handlers for 8 contexts.
+[    0.000000] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[    0.000000] riscv-timer: riscv_timer_init_dt: Registering clocksource cpuid [0] hartid [3]
+[    0.000000] clocksource: riscv_clocksource: mask: 0xffffffffffffffff max_cycles: 0x24e6a1710, max_idle_ns: 440795202120 ns
+[    0.000254] sched_clock: 64 bits at 10MHz, resolution 100ns, wraps every 4398046511100ns
+[    0.004777] riscv-timer: Timer interrupt in S-mode is available via sstc extension
+[    0.035911] Console: colour dummy device 80x25
+[    0.041147] Calibrating delay loop (skipped), value calculated using timer frequency.. 20.00 BogoMIPS (lpj=40000)
+[    0.045755] pid_max: default: 32768 minimum: 301
+[    0.049280] LSM: Security Framework initializing
+[    0.058915] Mount-cache hash table entries: 4096 (order: 3, 32768 bytes, linear)
+[    0.062533] Mountpoint-cache hash table entries: 4096 (order: 3, 32768 bytes, linear)
+[    0.174643] cblist_init_generic: Setting adjustable number of callback queues.
+[    0.179666] cblist_init_generic: Setting shift to 2 and lim to 1.
+[    0.183334] riscv: ELF compat mode supported
+[    0.184650] ASID allocator using 16 bits (65536 entries)
+[    0.191026] rcu: Hierarchical SRCU implementation.
+[    0.192590] rcu: 	Max phase no-delay instances is 1000.
+[    0.201965] EFI services will not be available.
+[    0.316433] smp: Bringing up secondary CPUs ...
+[    0.384015] smp: Brought up 1 node, 4 CPUs
+[    0.452823] devtmpfs: initialized
+[    0.502477] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[    0.506738] futex hash table entries: 1024 (order: 4, 65536 bytes, linear)
+[    0.520304] pinctrl core: initialized pinctrl subsystem
+[    0.543131] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    0.555153] audit: initializing netlink subsys (disabled)
+[    0.563090] audit: type=2000 audit(0.368:1): state=initialized audit_enabled=0 res=1
+[    0.573305] cpuidle: using governor menu
+[    0.656174] HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+[    0.657658] HugeTLB: 0 KiB vmemmap can be freed for a 2.00 MiB page
+[    0.673558] cryptd: max_cpu_qlen set to 1000
+[    0.688807] iommu: Default domain type: Translated 
+[    0.689682] iommu: DMA domain TLB invalidation policy: strict mode 
+[    0.695703] SCSI subsystem initialized
+[    0.698640] libata version 3.00 loaded.
+[    0.701347] usbcore: registered new interface driver usbfs
+[    0.702784] usbcore: registered new interface driver hub
+[    0.704088] usbcore: registered new device driver usb
+[    0.748685] vgaarb: loaded
+[    2.362743] clocksource: Switched to clocksource riscv_clocksource
+[    2.446379] NET: Registered PF_INET protocol family
+[    2.451021] IP idents hash table entries: 32768 (order: 6, 262144 bytes, linear)
+[    2.472084] tcp_listen_portaddr_hash hash table entries: 1024 (order: 3, 32768 bytes, linear)
+[    2.473830] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    2.475038] TCP established hash table entries: 16384 (order: 5, 131072 bytes, linear)
+[    2.477098] TCP bind hash table entries: 16384 (order: 8, 1048576 bytes, linear)
+[    2.485258] TCP: Hash tables configured (established 16384 bind 16384)
+[    2.490724] UDP hash table entries: 1024 (order: 4, 98304 bytes, linear)
+[    2.492473] UDP-Lite hash table entries: 1024 (order: 4, 98304 bytes, linear)
+[    2.498007] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    2.509227] RPC: Registered named UNIX socket transport module.
+[    2.511368] RPC: Registered udp transport module.
+[    2.512228] RPC: Registered tcp transport module.
+[    2.513077] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    2.515097] PCI: CLS 0 bytes, default 64
+[    2.618755] kvm [1]: hypervisor extension available
+[    2.619401] kvm [1]: using Sv57x4 G-stage page table format
+[    2.620115] kvm [1]: VMID 14 bits available
+[    2.647386] workingset: timestamp_bits=46 max_order=19 bucket_order=0
+[    2.744800] NFS: Registering the id_resolver key type
+[    2.748547] Key type id_resolver registered
+[    2.749162] Key type id_legacy registered
+[    2.751365] nfs4filelayout_init: NFSv4 File Layout Driver Registering...
+[    2.752535] nfs4flexfilelayout_init: NFSv4 Flexfile Layout Driver Registering...
+[    2.755945] 9p: Installing v9fs 9p2000 file system support
+[    2.822051] NET: Registered PF_ALG protocol family
+[    2.823087] Key type asymmetric registered
+[    2.823753] Asymmetric key parser 'x509' registered
+[    2.824597] Asymmetric key parser 'pkcs8' registered
+[    2.826130] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 250)
+[    2.829302] io scheduler mq-deadline registered
+[    2.830504] io scheduler kyber registered
+[    2.843222] pci-host-generic 30000000.pci: host bridge /soc/pci@30000000 ranges:
+[    2.846621] pci-host-generic 30000000.pci:       IO 0x0003000000..0x000300ffff -> 0x0000000000
+[    2.848984] pci-host-generic 30000000.pci:      MEM 0x0040000000..0x007fffffff -> 0x0040000000
+[    2.850427] pci-host-generic 30000000.pci:      MEM 0x0400000000..0x07ffffffff -> 0x0400000000
+[    2.853085] pci-host-generic 30000000.pci: Memory resource size exceeds max for 32 bits
+[    2.858790] pci-host-generic 30000000.pci: ECAM at [mem 0x30000000-0x3fffffff] for [bus 00-ff]
+[    2.863559] pci-host-generic 30000000.pci: PCI host bridge to bus 0000:00
+[    2.865426] pci_bus 0000:00: root bus resource [bus 00-ff]
+[    2.866675] pci_bus 0000:00: root bus resource [io  0x0000-0xffff]
+[    2.867718] pci_bus 0000:00: root bus resource [mem 0x40000000-0x7fffffff]
+[    2.868566] pci_bus 0000:00: root bus resource [mem 0x400000000-0x7ffffffff]
+[    2.872845] pci 0000:00:00.0: [1b36:0008] type 00 class 0x060000
+[    2.880589] pci 0000:00:01.0: [1af4:1050] type 00 class 0x030000
+[    2.885331] pci 0000:00:01.0: reg 0x10: [mem 0x40000000-0x407fffff pref]
+[    2.892488] pci 0000:00:01.0: reg 0x18: [mem 0x40800000-0x40803fff 64bit pref]
+[    2.897933] pci 0000:00:01.0: reg 0x20: [mem 0x40804000-0x40804fff]
+[    2.903253] pci 0000:00:01.0: reg 0x30: [mem 0x40810000-0x4081ffff pref]
+[    2.906343] pci 0000:00:01.0: vgaarb: setting as boot VGA device
+[    2.907168] pci 0000:00:01.0: vgaarb: bridge control possible
+[    2.908185] pci 0000:00:01.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+[    2.911884] pci 0000:00:02.0: [1b36:000d] type 00 class 0x0c0330
+[    2.913830] pci 0000:00:02.0: reg 0x10: [mem 0x40820000-0x40823fff 64bit]
+[    2.923878] pci 0000:00:01.0: BAR 0: assigned [mem 0x40000000-0x407fffff pref]
+[    2.925239] pci 0000:00:01.0: BAR 6: assigned [mem 0x40800000-0x4080ffff pref]
+[    2.926844] pci 0000:00:01.0: BAR 2: assigned [mem 0x400000000-0x400003fff 64bit pref]
+[    2.930019] pci 0000:00:02.0: BAR 0: assigned [mem 0x400004000-0x400007fff 64bit]
+[    2.932827] pci 0000:00:01.0: BAR 4: assigned [mem 0x40810000-0x40810fff]
+[    3.698268] Serial: 8250/16550 driver, 4 ports, IRQ sharing disabled
+[    3.742569] printk: console [ttyS0] disabled
+[    3.752516] 10000000.serial: ttyS0 at MMIO 0x10000000 (irq = 2, base_baud = 230400) is a 16550A
+[    3.762679] printk: console [ttyS0] enabled
+[    3.766739] printk: bootconsole [ns16550a0] disabled
+[    3.884966] loop: module loaded
+[    3.889361] virtio_blk virtio1: 1/0/0 default/read/poll queues
+[    3.904484] virtio_blk virtio1: [vda] 41943040 512-byte logical blocks (21.5 GB/20.0 GiB)
+[    4.098042]  vda: vda1 vda2
+[    4.140922] e1000e: Intel(R) PRO/1000 Network Driver
+[    4.142557] e1000e: Copyright(c) 1999 - 2015 Intel Corporation.
+[    4.155324] xhci_hcd 0000:00:02.0: xHCI Host Controller
+[    4.157265] xhci_hcd 0000:00:02.0: new USB bus registered, assigned bus number 1
+[    4.170727] xhci_hcd 0000:00:02.0: hcc params 0x00087001 hci version 0x100 quirks 0x0000000000000010
+[    4.177162] xhci_hcd 0000:00:02.0: xHCI Host Controller
+[    4.178002] xhci_hcd 0000:00:02.0: new USB bus registered, assigned bus number 2
+[    4.178915] xhci_hcd 0000:00:02.0: Host supports USB 3.0 SuperSpeed
+[    4.210714] hub 1-0:1.0: USB hub found
+[    4.214988] hub 1-0:1.0: 4 ports detected
+[    4.234946] usb usb2: We don't know the algorithms for LPM for this host, disabling LPM.
+[    4.243032] hub 2-0:1.0: USB hub found
+[    4.244738] hub 2-0:1.0: 4 ports detected
+[    4.304531] usbcore: registered new interface driver uas
+[    4.308047] usbcore: registered new interface driver usb-storage
+[    4.315325] mousedev: PS/2 mouse device common for all mice
+[    4.334696] goldfish_rtc 101000.rtc: registered as rtc0
+[    4.339996] goldfish_rtc 101000.rtc: setting system clock to 2023-04-09T07:45:34 UTC (1681026334)
+[    4.358028] syscon-poweroff poweroff: pm_power_off already claimed for sbi_srst_power_off
+[    4.363032] syscon-poweroff: probe of poweroff failed with error -16
+[    4.372310] sdhci: Secure Digital Host Controller Interface driver
+[    4.374092] sdhci: Copyright(c) Pierre Ossman
+[    4.376252] sdhci-pltfm: SDHCI platform and OF driver helper
+[    4.382348] usbcore: registered new interface driver usbhid
+[    4.383539] usbhid: USB HID core driver
+[    4.386638] riscv-pmu-sbi: SBI PMU extension is available
+[    4.390123] riscv-pmu-sbi: 16 firmware and 18 hardware counters
+[    4.391357] riscv-pmu-sbi: Perf sampling/filtering is not supported as sscof extension is not available
+[    4.420891] NET: Registered PF_INET6 protocol family
+[    4.453623] Segment Routing with IPv6
+[    4.455446] In-situ OAM (IOAM) with IPv6
+[    4.457275] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+[    4.466600] NET: Registered PF_PACKET protocol family
+[    4.469749] 9pnet: Installing 9P2000 support
+[    4.471523] Key type dns_resolver registered
+[    4.472280] start plist test
+[    4.484920] end plist test
+[    4.493415] debug_vm_pgtable: [debug_vm_pgtable         ]: Validating architecture page table helpers
+[    4.543365] usb 1-1: new high-speed USB device number 2 using xhci_hcd
+[    4.770483] input: QEMU QEMU USB Keyboard as /devices/platform/soc/30000000.pci/pci0000:00/0000:00:02.0/usb1/1-1/1-1:1.0/0003:0627:0001.0001/input/input0
+[    4.843584] hid-generic 0003:0627:0001.0001: input: USB HID v1.11 Keyboard [QEMU QEMU USB Keyboard] on usb-0000:00:02.0-1/input0
+[    4.977951] usb 1-2: new high-speed USB device number 3 using xhci_hcd
+[    5.047181] EXT4-fs (vda2): mounted filesystem with ordered data mode. Quota mode: disabled.
+[    5.049984] VFS: Mounted root (ext4 filesystem) on device 254:2.
+[    5.073296] devtmpfs: mounted
+[    5.165408] input: QEMU QEMU USB Tablet as /devices/platform/soc/30000000.pci/pci0000:00/0000:00:02.0/usb1/1-2/1-2:1.0/0003:0627:0001.0002/input/input1
+[    5.171418] hid-generic 0003:0627:0001.0002: input: USB HID v0.01 Mouse [QEMU QEMU USB Tablet] on usb-0000:00:02.0-2/input0
+[    5.188466] Freeing unused kernel image (initmem) memory: 2248K
+[    5.192002] Run /sbin/init as init process
+[    5.192683]   with arguments:
+[    5.192747]     /sbin/init
+[    5.192816]   with environment:
+[    5.192878]     HOME=/
+[    5.192934]     TERM=linux
+[    5.192964]     selinux=0
+[    9.159320] systemd[1]: systemd v249-49.oe2303 running in system mode (+PAM +AUDIT +SELINUX -APPARMOR +IMA -SMACK +SECCOMP +GCRYPT +GNUTLS -OPENSSL +ACL +BLKID -CURL -ELFUTILS -FIDO2 +IDN2 -IDN -IPTC +KMOD -LIBCRYPTSETUP +LIBFDISK +PCRE2 -PWQUALITY +P11KIT -QRENCODE +BZIP2 +LZ4 +XZ +ZLIB -ZSTD +XKBCOMMON +UTMP +SYSVINIT default-hierarchy=legacy)
+[    9.174971] systemd[1]: Detected architecture riscv64.
+[    9.423614] systemd[1]: Hostname set to <openeuler-riscv64>.
+[   10.975616] systemd-sysv-generator[177]: SysV service '/etc/rc.d/init.d/network' lacks a native systemd unit file. Automatically generating a unit file for compatibility. Please update package to include a native systemd unit file, in order to make it more safe and robust.
+[   14.226129] systemd[1]: /usr/lib/systemd/system/dbus.socket:5: ListenStream= references a path below legacy directory /var/run/, updating /var/run/dbus/system_bus_socket → /run/dbus/system_bus_socket; please update the unit file accordingly.
+[   14.268862] systemd[1]: /usr/lib/systemd/system/rtkit-daemon.service:32: Unknown key name 'ControlGroup' in section 'Service', ignoring.
+[   15.880706] systemd[1]: Queued start job for default target Graphical Interface.
+[   16.467628] systemd[1]: Created slice Slice /system/getty.
+[   16.500719] systemd[1]: Created slice Slice /system/modprobe.
+[   16.528330] systemd[1]: Created slice Slice /system/serial-getty.
+[   16.555993] systemd[1]: Created slice Slice /system/sshd-keygen.
+[   16.583996] systemd[1]: Created slice Slice /system/systemd-fsck.
+[   16.610040] systemd[1]: Created slice User and Session Slice.
+[   16.624490] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+[   16.700009] systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+[   16.710334] systemd[1]: Reached target User and Group Name Lookups.
+[   16.716653] systemd[1]: Reached target Remote File Systems.
+[   16.723785] systemd[1]: Reached target Slice Units.
+[   16.731024] systemd[1]: Reached target Swaps.
+[   16.744051] systemd[1]: Listening on Device-mapper event daemon FIFOs.
+[   16.759463] systemd[1]: Listening on LVM2 poll daemon socket.
+[   16.805173] systemd[1]: Listening on Process Core Dump Socket.
+[   16.814526] systemd[1]: Listening on initctl Compatibility Named Pipe.
+[   16.830213] systemd[1]: Listening on Journal Socket (/dev/log).
+[   16.844869] systemd[1]: Listening on Journal Socket.
+[   16.860220] systemd[1]: Listening on udev Control Socket.
+[   16.872437] systemd[1]: Listening on udev Kernel Socket.
+[   16.956651] systemd[1]: Mounting Huge Pages File System...
+[   17.033362] systemd[1]: Mounting POSIX Message Queue File System...
+[   17.099359] systemd[1]: Mounting Kernel Debug File System...
+[   17.172046] systemd[1]: Mounting Kernel Trace File System...
+[   17.291039] systemd[1]: Mounting Temporary Directory /tmp...
+[   17.427921] systemd[1]: Starting Create List of Static Device Nodes...
+[   17.523944] systemd[1]: Starting Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling...
+[   17.673706] systemd[1]: Starting Load Kernel Module configfs...
+[   17.884443] systemd[1]: Starting Load Kernel Module drm...
+[   18.028776] systemd[1]: Starting Load Kernel Module fuse...
+[   18.278140] systemd[1]: Starting Set Up Additional Binary Formats...
+[   18.303097] systemd[1]: Condition check resulted in File System Check on Root Device being skipped.
+[   18.329859] systemd[1]: systemd-journald.service: unit configures an IP firewall, but the local system does not support BPF/cgroup firewalling.
+[   18.332073] systemd[1]: (This warning is only shown for the first unit using IP firewalling.)
+[   18.633063] systemd[1]: Starting Journal Service...
+[   18.651613] fuse: init (API version 7.37)
+[   18.671232] systemd[1]: Condition check resulted in Load Kernel Modules being skipped.
+[   18.966511] systemd[1]: Starting Remount Root and Kernel File Systems...
+[   19.201050] systemd[1]: Starting Apply Kernel Variables...
+[   19.343854] systemd[1]: Starting Coldplug All udev Devices...
+[   19.453296] systemd[1]: Starting Setup Virtual Console...
+[   19.723063] systemd[1]: proc-sys-fs-binfmt_misc.automount: Got automount request for /proc/sys/fs/binfmt_misc, triggered by 196 (systemd-binfmt)
+[   19.754159] systemd[1]: Mounted Huge Pages File System.
+[   19.771479] systemd[1]: Mounted POSIX Message Queue File System.
+[   19.793872] systemd[1]: Mounted Kernel Debug File System.
+[   19.807635] systemd[1]: Mounted Kernel Trace File System.
+[   19.828681] systemd[1]: Mounted Temporary Directory /tmp.
+[   19.967077] systemd[1]: Finished Create List of Static Device Nodes.
+[   20.078715] systemd[1]: Finished Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling.
+[   20.170735] systemd[1]: modprobe@configfs.service: Deactivated successfully.
+[   20.231408] systemd[1]: Finished Load Kernel Module configfs.
+[   20.294150] systemd[1]: modprobe@drm.service: Deactivated successfully.
+[   20.353808] systemd[1]: Finished Load Kernel Module drm.
+[   20.402564] systemd[1]: modprobe@fuse.service: Deactivated successfully.
+[   20.463869] systemd[1]: Finished Load Kernel Module fuse.
+[   20.541225] systemd[1]: Finished Apply Kernel Variables.
+[   20.619570] systemd[1]: Finished Setup Virtual Console.
+[   20.782826] systemd[1]: Mounting Arbitrary Executable File Formats File System...
+[   20.936580] EXT4-fs (vda2): re-mounted. Quota mode: disabled.
+[   20.971859] systemd[1]: Mounting FUSE Control File System...
+[   20.995041] systemd[1]: Condition check resulted in Kernel Configuration File System being skipped.
+[   21.215932] systemd[1]: Finished Remount Root and Kernel File Systems.
+[   21.270152] systemd[1]: Condition check resulted in Rebuild Hardware Database being skipped.
+[   21.422125] systemd[1]: Starting Load/Save Random Seed...
+[   21.483044] systemd[1]: Condition check resulted in Create System Users being skipped.
+[   21.666469] systemd[1]: Starting Create Static Device Nodes in /dev...
+[   21.828936] systemd[1]: Mounted Arbitrary Executable File Formats File System.
+[   21.863256] systemd[1]: Mounted FUSE Control File System.
+[   22.038635] systemd[1]: Finished Set Up Additional Binary Formats.
+[   22.089019] systemd[1]: Started Journal Service.
+[   22.935144] systemd-journald[197]: Received client request to flush runtime journal.
+[   31.560335] [drm] pci: virtio-vga detected at 0000:00:01.0
+[   31.561994] virtio-pci 0000:00:01.0: vgaarb: deactivate vga console
+[   31.565324] [drm] features: -virgl +edid -resource_blob -host_visible
+[   31.565482] [drm] features: -context_init
+[   31.571450] [drm] number of scanouts: 1
+[   31.572108] [drm] number of cap sets: 0
+[   31.658038] [drm] Initialized virtio_gpu 0.1.0 0 for 0000:00:01.0 on minor 0
+[   31.790740] virtio-pci 0000:00:01.0: [drm] drm_plane_enable_fb_damage_clips() not called
+[   31.797522] Console: switching to colour frame buffer device 84x45
+[   31.987261] virtio-pci 0000:00:01.0: [drm] fb0: virtio_gpudrmfb frame buffer device
+[   36.047539] EXT4-fs (vda1): mounting ext2 file system using the ext4 subsystem
+[   36.115009] EXT4-fs (vda1): mounted filesystem without journal. Quota mode: disabled.
+[  147.512260] systemd-sysv-generator[696]: SysV service '/etc/rc.d/init.d/network' lacks a native systemd unit file. Automatically generating a unit file for compatibility. Please update package to include a native systemd unit file, in order to make it more safe and robust.
+[  170.101471] systemd-sysv-generator[719]: SysV service '/etc/rc.d/init.d/network' lacks a native systemd unit file. Automatically generating a unit file for compatibility. Please update package to include a native systemd unit file, in order to make it more safe and robust.
+[  359.174842] gnome-session-b[759]: unhandled signal 11 code 0x1 at 0xffffffffd3d56a8d
+[  359.183253] CPU: 0 PID: 759 Comm: gnome-session-b Not tainted 6.1.19-1.oe2303.riscv64 #1
+[  359.184651] Hardware name: riscv-virtio,qemu (DT)
+[  359.185433] epc : 00ffffffa868fa38 ra : 000000000000007f sp : 00ffffffc7c6d350
+[  359.186516]  gp : 00aaaaaad3d42dd8 tp : 00ffffffa6641e40 t0 : 0000000000000000
+[  359.188293]  t1 : 0000000000000000 t2 : 00aaaaaad3d57000 s0 : 00aaaaaad3d7b8ec
+[  359.189328]  s1 : 00ffffffc7c75408 a0 : ffffffffd3d57000 a1 : 00aaaaaad3d7b8d1
+[  359.190659]  a2 : 0000000000000001 a3 : 00ffffffc7c75408 a4 : 00ffffffc7c6d408
+[  359.192401]  a5 : 00ffffffc7c6d410 a6 : 00ffffffc7c75410 a7 : e44cd08a5a5bdc00
+[  359.193557]  s2 : 00ffffffc7c6d408 s3 : 0000000000989681 s4 : 00ffffffc7c75438
+[  359.194649]  s5 : 00aaaaaad3d79fd0 s6 : 0000000000000001 s7 : ffffffffffffffff
+[  359.196665]  s8 : 00aaaaaad3d7d000 s9 : 00aaaaaad3d31d90 s10: 00ffffffc7c75578
+[  359.198089]  s11: 00aaaaaad3d7b8d0 t3 : 00ffffffa7ed1ecc t4 : 0000000000000000
+[  359.199313]  t5 : 0000000000000000 t6 : 0000000000000000
+[  359.200093] status: 0000000200004020 badaddr: ffffffffd3d56a8d cause: 000000000000000d
