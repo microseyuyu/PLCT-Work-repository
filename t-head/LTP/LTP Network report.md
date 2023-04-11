@@ -1,4 +1,6 @@
-# LTP Network report
+# LTP Network Full Test Report
+
+> CONF means Not implemented,or skipped.
 
 ```
 Test Start Time: Mon Apr 10 08:37:10 2023
