@@ -1,4 +1,4 @@
-# lmbench_Makefile
+# Unixbench_Makefile
 
 ```
 ##############################################################################
@@ -46,10 +46,10 @@ SHELL = /bin/sh
 # X11 libraries on your system.
 #
 # Comment the line out to disable these tests.
-# GRAPHIC_TESTS = defined
+GRAPHIC_TESTS = defined
 
 # Set "GL_LIBS" to the libraries needed to link a GL program.
-GL_LIBS = -lGL -lXext -lX11 -lm
+GL_LIBS = -lGL -lXext -lX11 
 
 
 # COMPILER CONFIGURATION: Set "CC" to the name of the compiler to use
